@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Privacy Policy — Privacy Screen Demo</title>
+  <meta name="description" content="Privacy Policy for Privacy Screen Demo" />
+  <style>
+    :root {
+      --bg: #0b0c0f;
+      --card: rgba(255,255,255,0.06);
+      --text: rgba(255,255,255,0.92);
+      --muted: rgba(255,255,255,0.72);
+      --link: #7db7ff;
+      --border: rgba(255,255,255,0.10);
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background: radial-gradient(1200px 800px at 30% 0%, rgba(125,183,255,0.18), transparent 60%),
+                  radial-gradient(900px 600px at 90% 20%, rgba(120,255,215,0.10), transparent 55%),
+                  var(--bg);
+      color: var(--text);
+      line-height: 1.55;
+    }
+    header {
+      padding: 40px 16px 16px;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 28px;
+      letter-spacing: -0.02em;
+    }
+    header p {
+      margin: 10px 0 0;
+      color: var(--muted);
+      font-size: 14px;
+    }
+    main {
+      max-width: 860px;
+      margin: 0 auto;
+      padding: 16px;
+    }
+    .card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 18px;
+      padding: 22px;
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+    }
+    h2 {
+      margin: 20px 0 10px;
+      font-size: 18px;
+      letter-spacing: -0.01em;
+    }
+    p, li { color: var(--muted); }
+    ul { margin: 10px 0 0; padding-left: 18px; }
+    a { color: var(--link); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .meta {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+      margin-top: 14px;
+      font-size: 13px;
+      color: var(--muted);
+    }
+    .pill {
+      border: 1px solid var(--border);
+      padding: 6px 10px;
+      border-radius: 999px;
+      background: rgba(255,255,255,0.04);
+    }
+    footer {
+      padding: 18px 16px 40px;
+      text-align: center;
+      color: rgba(255,255,255,0.55);
+      font-size: 12px;
+    }
+    .divider {
+      height: 1px;
+      background: var(--border);
+      margin: 18px 0;
+    }
+    code {
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+      font-size: 0.95em;
+      color: rgba(255,255,255,0.85);
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>Privacy Policy</h1>
+    <p>Privacy Screen Demo</p>
+    <div class="meta" style="justify-content:center;">
+      <span class="pill">Last updated: <span id="lastUpdated">2026-03-05</span></span>
+      <span class="pill">Contact: <a href="mailto:horakondrej@icloud.com">horakondrej@icloud.com</a></span>
+    </div>
+  </header>
+
+  <main>
+    <section class="card" aria-label="Privacy Policy">
+      <p>
+        <strong>Privacy Screen Demo</strong> is a demonstration app that shows how a privacy screen feature could behave.
+        The blur effect applies <strong>only</strong> to the demo screen inside the app.
+      </p>
+
+      <div class="divider"></div>
+
+      <h2>Data Collection</h2>
+      <p>
+        We do <strong>not</strong> collect, store, sell, or share any personal data. The app does not use analytics
+        or tracking.
+      </p>
+
+      <h2>Camera Usage</h2>
+      <p>
+        The app may use the device camera only to detect whether a face is present and how many faces are visible,
+        in order to demonstrate privacy behavior (for example, blurring when more than one person is looking).
+      </p>
+      <ul>
+        <li>All processing happens locally on your device.</li>
+        <li>No photos or videos are recorded or saved by the app.</li>
+        <li>No biometric identifiers are stored or transmitted.</li>
+      </ul>
+
+      <h2>Photos</h2>
+      <p>
+        If you choose to pick an image, it is used only to display the demo preview. The image is kept in memory
+        for the current session and is not stored by the app.
+      </p>
+
+      <h2>Third-Party Services</h2>
+      <p>
+        The app does not integrate with third-party analytics, advertising, or tracking services.
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    © <span id="year"></span> Ondřej Horák All rights reserved.
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
