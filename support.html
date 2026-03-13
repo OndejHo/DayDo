@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="cs">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Podpora — DayDo</title>
+  <meta name="description" content="Podpora pro aplikaci DayDo" />
+  <style>
+    :root {
+      --bg: #0b0c0f;
+      --card: rgba(255,255,255,0.06);
+      --text: rgba(255,255,255,0.92);
+      --muted: rgba(255,255,255,0.72);
+      --link: #7db7ff;
+      --border: rgba(255,255,255,0.10);
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background: radial-gradient(1200px 800px at 30% 0%, rgba(125,183,255,0.18), transparent 60%),
+                  radial-gradient(900px 600px at 90% 20%, rgba(120,255,215,0.10), transparent 55%),
+                  var(--bg);
+      color: var(--text);
+      line-height: 1.55;
+    }
+    header {
+      padding: 40px 16px 16px;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 28px;
+      letter-spacing: -0.02em;
+    }
+    header p {
+      margin: 10px 0 0;
+      color: var(--muted);
+      font-size: 14px;
+    }
+    main {
+      max-width: 860px;
+      margin: 0 auto;
+      padding: 16px;
+    }
+    .card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 18px;
+      padding: 22px;
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+    }
+    h2 {
+      margin: 20px 0 10px;
+      font-size: 18px;
+      letter-spacing: -0.01em;
+    }
+    p, li { color: var(--muted); }
+    ul { margin: 10px 0 0; padding-left: 18px; }
+    a { color: var(--link); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .meta {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+      margin-top: 14px;
+      font-size: 13px;
+      color: var(--muted);
+    }
+    .pill {
+      border: 1px solid var(--border);
+      padding: 6px 10px;
+      border-radius: 999px;
+      background: rgba(255,255,255,0.04);
+    }
+    footer {
+      padding: 18px 16px 40px;
+      text-align: center;
+      color: rgba(255,255,255,0.55);
+      font-size: 12px;
+    }
+    .divider {
+      height: 1px;
+      background: var(--border);
+      margin: 18px 0;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>Podpora</h1>
+    <p>DayDo</p>
+    <div class="meta" style="justify-content:center;">
+      <span class="pill">Kontakt: <a href="mailto:horakondrej@icloud.com">horakondrej@icloud.com</a></span>
+    </div>
+  </header>
+
+  <main>
+    <section class="card" aria-label="Podpora aplikace">
+      <p>
+        Vítejte na stránce podpory pro <strong>DayDo</strong>.
+        Pokud máte dotaz, narazili jste na problém nebo chcete poslat návrh na zlepšení,
+        můžete mě kontaktovat e-mailem.
+      </p>
+
+      <div class="divider"></div>
+
+      <h2>Kontakt</h2>
+      <p>
+        Pro podporu aplikace mě kontaktujte na adrese:
+        <a href="mailto:horakondrej@icloud.com">horakondrej@icloud.com</a>
+      </p>
+
+      <h2>S čím mohu pomoci</h2>
+      <ul>
+        <li>problémy s používáním aplikace</li>
+        <li>dotazy k funkcím a nastavení</li>
+        <li>hlášení chyb</li>
+        <li>návrhy na zlepšení aplikace</li>
+      </ul>
+
+      <h2>Soukromí</h2>
+      <p>
+        Informace o zpracování dat a ochraně soukromí najdete na stránce zásad ochrany soukromí aplikace DayDo.
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    © <span id="year"></span> Ondřej Horák
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
