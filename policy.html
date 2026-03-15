@@ -1,0 +1,389 @@
+<!doctype html>
+<html lang="cs">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Privacy Policy / Zásady ochrany soukromí — DayDo</title>
+  <meta name="description" content="Zásady ochrany soukromí aplikace DayDo / DayDo Privacy Policy" />
+  <style>
+    :root {
+      --bg: #0b0c0f;
+      --card: rgba(255,255,255,0.06);
+      --text: rgba(255,255,255,0.92);
+      --muted: rgba(255,255,255,0.72);
+      --link: #7db7ff;
+      --border: rgba(255,255,255,0.10);
+      --button: rgba(255,255,255,0.08);
+      --button-active: rgba(255,255,255,0.16);
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background:
+        radial-gradient(1200px 800px at 30% 0%, rgba(125,183,255,0.18), transparent 60%),
+        radial-gradient(900px 600px at 90% 20%, rgba(120,255,215,0.10), transparent 55%),
+        var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+    header {
+      padding: 40px 16px 16px;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 30px;
+      letter-spacing: -0.02em;
+    }
+    header p {
+      margin: 10px 0 0;
+      color: var(--muted);
+      font-size: 14px;
+    }
+    main {
+      max-width: 920px;
+      margin: 0 auto;
+      padding: 16px;
+    }
+    .card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 18px;
+      padding: 22px;
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+    }
+    h2 {
+      margin: 24px 0 10px;
+      font-size: 18px;
+      letter-spacing: -0.01em;
+    }
+    p, li { color: var(--muted); }
+    ul { margin: 10px 0 0; padding-left: 20px; }
+    a { color: var(--link); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .meta {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin-top: 14px;
+      font-size: 13px;
+      color: var(--muted);
+    }
+    .pill {
+      border: 1px solid var(--border);
+      padding: 6px 10px;
+      border-radius: 999px;
+      background: rgba(255,255,255,0.04);
+    }
+    .divider {
+      height: 1px;
+      background: var(--border);
+      margin: 18px 0;
+    }
+    .lang-switch {
+      display: inline-flex;
+      gap: 8px;
+      margin-top: 16px;
+      padding: 6px;
+      border: 1px solid var(--border);
+      background: rgba(255,255,255,0.04);
+      border-radius: 999px;
+    }
+    .lang-switch button {
+      border: 0;
+      background: var(--button);
+      color: var(--text);
+      padding: 8px 14px;
+      border-radius: 999px;
+      cursor: pointer;
+      font: inherit;
+    }
+    .lang-switch button.active {
+      background: var(--button-active);
+    }
+    .lang-block { display: none; }
+    .lang-block.active { display: block; }
+    footer {
+      padding: 18px 16px 40px;
+      text-align: center;
+      color: rgba(255,255,255,0.55);
+      font-size: 12px;
+    }
+    strong { color: var(--text); }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>Privacy Policy / Zásady ochrany soukromí</h1>
+    <p>DayDo</p>
+
+    <div class="meta">
+      <span class="pill">Kontakt / Contact: <a href="mailto:horakondrej@icloud.com">horakondrej@icloud.com</a></span>
+      <span class="pill">Poslední aktualizace / Last updated: <span id="today"></span></span>
+    </div>
+
+    <div class="lang-switch" aria-label="Přepnutí jazyka / Language switch">
+      <button id="btn-cs" class="active" type="button">Čeština</button>
+      <button id="btn-en" type="button">English</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="card" aria-label="Privacy policy">
+
+      <div id="lang-cs" class="lang-block active" lang="cs">
+        <p>
+          Tyto zásady ochrany soukromí popisují, jak aplikace <strong>DayDo</strong> pracuje s daty uživatele.
+          DayDo je kalendářová a plánovací aplikace, která může se souhlasem uživatele zobrazovat vybrané údaje
+          z aplikací a služeb zařízení Apple. Aplikace je navržena tak, aby data používala především přímo v zařízení uživatele.
+        </p>
+
+        <div class="divider"></div>
+
+        <h2>1. Jaká data může aplikace používat</h2>
+        <p>Podle toho, jaká oprávnění uživatel udělí, může DayDo používat následující typy dat:</p>
+        <ul>
+          <li>údaje z Kalendáře</li>
+          <li>údaje z Připomínek</li>
+          <li>údaje z Kontaktů</li>
+          <li>fotografie z knihovny Fotky</li>
+          <li>údaje o poloze</li>
+          <li>vybraná data ze Zdraví, konkrétně spánková data, srdeční tep a dechová frekvence</li>
+          <li>lokální oznámení a budíky nastavené pomocí systémových funkcí zařízení</li>
+          <li>údaje související s nákupem předplatného zpracovávané Applem prostřednictvím StoreKit</li>
+        </ul>
+
+        <h2>2. Za jakým účelem se data používají</h2>
+        <ul>
+          <li><strong>Kalendář:</strong> pro zobrazení, vytváření, úpravu a správu událostí.</li>
+          <li><strong>Připomínky:</strong> pro zobrazení, vytváření, úpravu a správu připomínek.</li>
+          <li><strong>Kontakty:</strong> pro zobrazení jmen, svátků, narozenin, výročí a kontaktních údajů. Aplikace může také otevřít nativní aplikaci pro telefon nebo e-mail.</li>
+          <li><strong>Kontakty – úpravy:</strong> aplikace může umožnit upravit u kontaktů datum narozenin a výročí.</li>
+          <li><strong>Fotky:</strong> pro zobrazení snímků souvisejících s časem konání události.</li>
+          <li><strong>Poloha:</strong> pro výpočet trasy a vzdálenosti k událostem.</li>
+          <li><strong>Zdraví:</strong> pro zobrazení údajů o spánku, tepu a dechové frekvenci v souvislosti s událostmi v aplikaci.</li>
+          <li><strong>Oznámení a budíky:</strong> pro upozornění na události, úkoly a plánované časy.</li>
+          <li><strong>Předplatné:</strong> pro odemknutí funkcí DayDo PRO a obnovu nákupů.</li>
+        </ul>
+
+        <h2>3. Ukládání a sdílení dat</h2>
+        <p>
+          DayDo neukládá osobní data uživatelů na vlastní server. Data používaná aplikací jsou zobrazována a zpracovávána
+          především přímo v zařízení uživatele.
+        </p>
+        <p>
+          DayDo tato data neprodává a nesdílí je s třetími stranami za účelem reklamy nebo marketingu.
+        </p>
+        <p>
+          Pokud uživatel využije nákup předplatného, zpracování platby a souvisejících údajů probíhá prostřednictvím společnosti Apple
+          podle pravidel App Store a služby StoreKit.
+        </p>
+
+        <h2>4. HealthKit data</h2>
+        <p>
+          Pokud uživatel udělí přístup ke Zdraví, aplikace používá pouze vybraná data potřebná pro zobrazení informací v aplikaci,
+          konkrétně spánek, srdeční tep a dechovou frekvenci.
+        </p>
+        <p>
+          Tato data nejsou aplikací DayDo odesílána na vlastní server ani používána pro reklamu, profilování nebo marketing.
+        </p>
+
+        <h2>5. Kontakty</h2>
+        <p>
+          Pokud uživatel udělí přístup ke Kontaktům, aplikace může zobrazit jména, svátky, narozeniny, výročí,
+          telefonní čísla a e-mailové adresy. U některých kontaktů může aplikace umožnit upravit datum narozenin a výročí.
+        </p>
+        <p>
+          Při klepnutí na telefon nebo e-mail DayDo pouze otevře odpovídající nativní aplikaci systému.
+        </p>
+
+        <h2>6. Fotky a poloha</h2>
+        <p>
+          Přístup k fotkám slouží pouze k zobrazení snímků souvisejících s událostí. Přístup k poloze slouží pouze
+          k výpočtu trasy a vzdálenosti k událostem. DayDo nepoužívá polohu pro průběžné sledování uživatele na serveru.
+        </p>
+
+        <h2>7. Předplatné a nákupy</h2>
+        <p>
+          Předplatné DayDo PRO a případné jednorázové nákupy jsou zpracovávány společností Apple prostřednictvím App Store.
+          DayDo nemá přístup k úplným platebním údajům uživatele, jako jsou čísla platebních karet.
+        </p>
+
+        <h2>8. Uchovávání dat</h2>
+        <p>
+          Aplikace sama neuchovává osobní data na vlastním serveru. Data, ke kterým DayDo přistupuje, zůstávají v zařízení
+          uživatele nebo v příslušných systémových službách Apple podle nastavení uživatele.
+        </p>
+
+        <h2>9. Oprávnění a kontrola uživatele</h2>
+        <p>
+          Uživatel může přístup aplikace k datům kdykoliv změnit nebo odebrat v nastavení iOS v části Soukromí a zabezpečení
+          nebo v nastavení konkrétních oprávnění, například Kalendář, Kontakty, Fotky, Poloha nebo Zdraví.
+        </p>
+
+        <h2>10. Děti</h2>
+        <p>
+          DayDo není určeno k vědomému shromažďování osobních údajů od dětí mimo běžné fungování aplikace v zařízení uživatele.
+        </p>
+
+        <h2>11. Změny těchto zásad</h2>
+        <p>
+          Tyto zásady ochrany soukromí mohou být čas od času aktualizovány. Aktuální verze bude vždy zveřejněna na této stránce.
+        </p>
+
+        <h2>12. Kontakt</h2>
+        <p>
+          Pokud máte dotaz k ochraně soukromí v aplikaci DayDo, kontaktujte mě na:
+          <a href="mailto:horakondrej@icloud.com">horakondrej@icloud.com</a>
+        </p>
+      </div>
+
+      <div id="lang-en" class="lang-block" lang="en">
+        <p>
+          This Privacy Policy explains how <strong>DayDo</strong> handles user data.
+          DayDo is a calendar and planning app that, with the user’s permission, may display selected information
+          from Apple device apps and services. The app is designed to use data primarily on the user’s device.
+        </p>
+
+        <div class="divider"></div>
+
+        <h2>1. Data the app may access</h2>
+        <p>Depending on the permissions granted by the user, DayDo may access the following types of data:</p>
+        <ul>
+          <li>Calendar data</li>
+          <li>Reminders data</li>
+          <li>Contacts data</li>
+          <li>Photos from the user’s photo library</li>
+          <li>Location data</li>
+          <li>Selected Health data, specifically sleep data, heart rate, and respiratory rate</li>
+          <li>Local notifications and alarms created using system features</li>
+          <li>Subscription-related purchase information processed by Apple through StoreKit</li>
+        </ul>
+
+        <h2>2. How the data is used</h2>
+        <ul>
+          <li><strong>Calendar:</strong> to display, create, edit, and manage events.</li>
+          <li><strong>Reminders:</strong> to display, create, edit, and manage reminders.</li>
+          <li><strong>Contacts:</strong> to display names, name days, birthdays, anniversaries, and contact details. The app may also open the native phone or email app.</li>
+          <li><strong>Contacts – editing:</strong> the app may allow the user to update birthday and anniversary dates for contacts.</li>
+          <li><strong>Photos:</strong> to display images related to the time of an event.</li>
+          <li><strong>Location:</strong> to calculate route and distance to events.</li>
+          <li><strong>Health:</strong> to display sleep, heart rate, and respiratory rate information in connection with events shown in the app.</li>
+          <li><strong>Notifications and alarms:</strong> to alert the user about events, tasks, and scheduled times.</li>
+          <li><strong>Subscriptions:</strong> to unlock DayDo PRO features and restore purchases.</li>
+        </ul>
+
+        <h2>3. Storage and sharing of data</h2>
+        <p>
+          DayDo does not store users’ personal data on its own server. Data used by the app is displayed and processed
+          primarily on the user’s device.
+        </p>
+        <p>
+          DayDo does not sell personal data and does not share it with third parties for advertising or marketing purposes.
+        </p>
+        <p>
+          If the user purchases a subscription, payment processing and related purchase information are handled by Apple
+          through the App Store and StoreKit.
+        </p>
+
+        <h2>4. HealthKit data</h2>
+        <p>
+          If the user grants access to Health, the app uses only the selected data necessary to display information in the app,
+          specifically sleep data, heart rate, and respiratory rate.
+        </p>
+        <p>
+          This data is not sent by DayDo to any own server and is not used for advertising, profiling, or marketing.
+        </p>
+
+        <h2>5. Contacts</h2>
+        <p>
+          If the user grants access to Contacts, the app may display names, name days, birthdays, anniversaries,
+          phone numbers, and email addresses. The app may also allow editing birthday and anniversary dates for contacts.
+        </p>
+        <p>
+          When the user taps a phone number or email address, DayDo only opens the corresponding native system app.
+        </p>
+
+        <h2>6. Photos and location</h2>
+        <p>
+          Access to Photos is used only to display images related to an event. Access to location is used only
+          to calculate route and distance to events. DayDo does not use location for continuous server-side tracking.
+        </p>
+
+        <h2>7. Subscriptions and purchases</h2>
+        <p>
+          DayDo PRO subscriptions and any one-time purchases are processed by Apple through the App Store.
+          DayDo does not have access to full payment details such as credit card numbers.
+        </p>
+
+        <h2>8. Data retention</h2>
+        <p>
+          The app itself does not retain personal data on its own server. Data accessed by DayDo remains on the user’s device
+          or within the relevant Apple system services according to the user’s settings.
+        </p>
+
+        <h2>9. User controls and permissions</h2>
+        <p>
+          The user can change or revoke the app’s access to data at any time in iOS Settings under Privacy & Security
+          or within the relevant permission settings such as Calendar, Contacts, Photos, Location, or Health.
+        </p>
+
+        <h2>10. Children</h2>
+        <p>
+          DayDo is not intended to knowingly collect personal data from children beyond the normal operation of the app on the user’s device.
+        </p>
+
+        <h2>11. Changes to this Privacy Policy</h2>
+        <p>
+          This Privacy Policy may be updated from time to time. The current version will always be published on this page.
+        </p>
+
+        <h2>12. Contact</h2>
+        <p>
+          If you have any questions about privacy in DayDo, contact me at:
+          <a href="mailto:horakondrej@icloud.com">horakondrej@icloud.com</a>
+        </p>
+      </div>
+
+    </section>
+  </main>
+
+  <footer>
+    © <span id="year"></span> Ondřej Horák
+  </footer>
+
+  <script>
+    const btnCs = document.getElementById("btn-cs");
+    const btnEn = document.getElementById("btn-en");
+    const langCs = document.getElementById("lang-cs");
+    const langEn = document.getElementById("lang-en");
+
+    function setLang(lang) {
+      const isCs = lang === "cs";
+      langCs.classList.toggle("active", isCs);
+      langEn.classList.toggle("active", !isCs);
+      btnCs.classList.toggle("active", isCs);
+      btnEn.classList.toggle("active", !isCs);
+      document.documentElement.lang = isCs ? "cs" : "en";
+    }
+
+    btnCs.addEventListener("click", () => setLang("cs"));
+    btnEn.addEventListener("click", () => setLang("en"));
+
+    document.getElementById("year").textContent = new Date().getFullYear();
+
+    const today = new Date();
+    const formatted = today.toLocaleDateString("cs-CZ", {
+      year: "numeric",
+      month: "long",
+      day: "numeric"
+    });
+    document.getElementById("today").textContent = formatted;
+  </script>
+</body>
+</html>
